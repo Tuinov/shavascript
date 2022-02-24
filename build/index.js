@@ -24,7 +24,7 @@ app.use((0, express_session_1.default)({
     saveUninitialized: false,
 }));
 app.use(AppRouter_1.AppRouter.getInstance());
-var PORT = 5000;
+var PORT = process.env.PORT || 5000;
 app.listen(PORT, function () {
     console.log("Listening on port ".concat(PORT));
 });
