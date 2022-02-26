@@ -4,7 +4,7 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "start": "node build/index.js"
+    "start:run": "node build/index.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "body-parser": "^1.19.0",
     "concurrently": "^6.2.0",
     "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
