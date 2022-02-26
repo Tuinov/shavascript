@@ -27,11 +27,11 @@ app.use(
 
 app.use(AppRouter.getInstance());
 
-app.use(express.static(path.resolve(__dirname, 'client/build'))) 
+// app.use(express.static(path.resolve(__dirname, 'client/build'))) 
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'))
-}) 
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'))
+// }) 
 
 let PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
